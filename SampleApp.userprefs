@@ -1,0 +1,23 @@
+﻿<Properties StartupItem="Assembly-CSharp.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Buttons/PlayVideoZoneButton.cs">
+    <Files>
+      <File FileName="Assets/Scripts/AdColonyAdManager/ADCAdManager.cs" Line="166" Column="24" />
+      <File FileName="Assets/Editor/PostBuildProcessor.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/Buttons/ChangeSceneButton.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/Buttons/GUITextureButton.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/Buttons/PlayVideoZoneButton.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/AdColonyAdManager/ADCVideoZone.cs" Line="11" Column="33" />
+      <File FileName="Assets/Scripts/AdColonyAdManager/ADCVideoZoneType.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/Text/CounterText.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/Currency/CurrencyTextManager.cs" Line="15" Column="105" />
+      <File FileName="Assets/Scripts/Miscellaneous/NativeInterfaceHandler.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/Miscellaneous/NoAdsInUnityEditorWarningLogic.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/Miscellaneous/RotateAroundObject.cs" Line="1" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
