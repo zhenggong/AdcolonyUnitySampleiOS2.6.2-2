@@ -138,10 +138,10 @@ public class ADCAdManager : MonoBehaviour {
     // App ID
 		appId = "appId";
     // Video zones
-		AddZoneToManager("VideoZone1", "zoneId", ADCVideoZoneType.V4VC);
-		AddZoneToManager("VideoZone2", "zoneId", ADCVideoZoneType.V4VC);
+		AddZoneToManager("VideoZone1", "VideoZone1", ADCVideoZoneType.V4VC);
+		AddZoneToManager("VideoZone2", "VideoZone1", ADCVideoZoneType.V4VC);
     // V4VC zones
-		AddZoneToManager("V4VCZone1", "zoneId", ADCVideoZoneType.V4VC);
+		AddZoneToManager("V4VCZone1", "VideoZone1", ADCVideoZoneType.V4VC);
 
 #endif
   }
@@ -302,7 +302,7 @@ public class ADCAdManager : MonoBehaviour {
     return ADCAdManager.Instance.videoZones;
   }
 
-  public static void ShowVideoAdByZoneKey(string zoneIdKey, bool offerV4VCBeforePlay = false, bool showPopUpAfter = false) {
+  public static void ShowVideoAdByZoneKey(string zoneIdKey, bool offerV4VCBeforePlay, bool showPopUpAfter) {
     ADCVideoZone videoZone = GetVideoZoneObjectByKey(zoneIdKey);
     string zoneId = GetZoneIdByKey(zoneIdKey);
     if(videoZone.zoneType == ADCVideoZoneType.Interstitial && AdColony.IsVideoAvailable(zoneId)) {
@@ -310,9 +310,9 @@ public class ADCAdManager : MonoBehaviour {
     }
     else if(videoZone.zoneType == ADCVideoZoneType.V4VC && AdColony.IsV4VCAvailable(zoneId)) {
       if(offerV4VCBeforePlay) {
-        AdColony.OfferV4VC(zoneId);
+				AdColony.OfferV4VC(showPopUpAfter,zoneId);
       } else {
-        AdColony.ShowV4VC(zoneId);
+				AdColony.ShowV4VC(showPopUpAfter,zoneId);
       }
     } else {
       Debug.Log("AdColony ---- The zone '" + zoneId + "' was requested to play, but it is NOT ready to play yet.");

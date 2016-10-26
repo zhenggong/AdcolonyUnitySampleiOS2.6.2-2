@@ -1,0 +1,16 @@
+<linker>
+<assembly fullname="Assembly-CSharp-firstpass">
+<type fullname="AdColony" preserve="all"/>
+</assembly>
+<assembly fullname="Assembly-CSharp">
+<type fullname="ADCAdManager" preserve="all"/>
+<type fullname="ChangeSceneButton" preserve="all"/>
+<type fullname="GUITextureButton" preserve="all"/>
+<type fullname="PlayVideoZoneButton" preserve="all"/>
+<type fullname="CurrencyTextManager" preserve="all"/>
+<type fullname="NativeInterfaceHandler" preserve="all"/>
+<type fullname="NoAdsInUnityEditorWarningLogic" preserve="all"/>
+<type fullname="RotateAroundObject" preserve="all"/>
+<type fullname="CounterText" preserve="all"/>
+</assembly>
+</linker>
